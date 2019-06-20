@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald|Raleway|Roboto');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+header{
+    width: 100%;
+    box-shadow: 0px 5px 15px #E0E0E0;
+}
+.Nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Nav-top-logo{
+    display: flex;
+    margin: 0.5em 1em;
+    text-decoration: none;
+}
+.Nav-top-logo img{
+    height: 50px;
+}
+.Nav-top-logo h1{
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 1.5px #EAA3AB;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.2em;
+}
+.Nav-top-search > input{
+    width: 40vw;
+    height: 3em;
+    border-radius:10px;
+    padding: 10px;
+    border: 1px solid #C7C6CC;
+    font-family: 'PT Serif',  sans-serif;
+}
+.Nav-top-search > input:focus{
+    border: 0.5px solid rgb(253, 158, 156);
+    box-shadow: 0px 1px 10px #FF6B69;
+}
+.Nav-top-user {
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+.Nav-top-user img{
+    border-radius: 100%;
+}
+.Nav-top-user{
+    display: flex;
+    width: 10rem;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.container{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 15px;
+}
+.Nav-left{
+    background: -moz-linear-gradient(left, #fc535a 29%, #fa7573 99%);
+    background: -webkit-linear-gradient(left, #fc535a 29%, #fa7573 99%);
+}
+.Menu{
+    height: 100%;
+    text-align: center;
+    display: grid;
+    font-size:1.6em;
+    font-family: 'Lato', sans-serif;
+}
+.Menu ol{
+    list-style: none;
+    color:#fff;
+}
+.Menu ol li{
+    margin: 1em 0;
+}
+.Menu ol li p{
+    margin:0.5em 0;
+}
+.Menu a:hover p{
+    color:rgb(248, 164, 90);
+    transition: 0.2s all ease-out;
+}
+.Menu a p{
+    font-size: 1.2em;
+    transition: 0.2s all ease-out;
+}
+.Menu a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+}
+.Last-item{
+    align-self: end;
+}
+.Premier{
+    padding: 0.5em;
+}
+
+.Movie-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom:1em; 
+}
+.Movie-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:15px;
+}
+.Movie-item{
+    position: relative;
+    cursor: pointer;
+    margin-bottom:1em; 
+}
+.Movie-item:hover .Movie-description{
+    height: 99%;
+    transition: 0.2s all ease-in-out;
+}
+.Movie-description{
+    background: rgba(202, 71, 71, .6);
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: 3px;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+    padding: 1em;
+    overflow: hidden;
+}
+.Movie-description h3{
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+.Movie-description p{
+    font-size: 1em;
+    font-family: 'PT Serif', sans-serif;
+    padding: 0.2em;
+    margin:0.5em 0;
+}
+.Movie-item img{
+    width: 100%;
+}
+@media screen and (max-width:1024px){
+    .Movie-description{
+        padding: 0.5em;
+    }
+    .Movie-description h3{
+        font-size: 20px;
+    }
+    .Movie-description p{
+        font-size: 0.9em;
+        margin:0.4em 0;
+    }
+    .Nav-top-user img{
+        width:40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+        display: grid;
+        grid-template-columns: 100px 1fr;
+    }
+    
+    .Movie-title{
+        font-size: 20px;
+        margin-bottom:0.5em; 
+    }
+    .Menu a {
+        font-size: 0.8em;
+    }
+    .Menu a p {
+        font-size: 1em; 
+   }
+   .Movie-description h3{
+    font-size:16px;
+    }
+    .Movie-description p{
+        font-size: 0.8em;
+        margin:0.4em 0;
+    }
+    .Nav-top-search input{
+        width: 30vw;
+        height: 30px;
+    }
+}
+@media screen and (max-width:480px){
+    .Movie-container{
+        grid-template-columns: 1fr;
+    }
+    .Nav-top-user img{
+        width:30px;
+        height: 30px;
+    }
+    .Nav-top-logo img{
+        height: 40px;
+        width: 40px;
+        vertical-align: center;
+    }
+    .Nav-top-logo h1{
+        margin: 0.2em;
+        font-size: 1.5em;
+    }
+
+}
+@media screen and (max-width:320px){
+    
+}
